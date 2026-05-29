@@ -14,6 +14,7 @@ class MusicianSerializer(serializers.ModelSerializer):
             "last_name",
             "instrument",
             "age",
-            "date_of_applying",
             "is_adult",
+            "date_of_applying",
         ]
+        read_only_fields = ["id", "date_of_applying", "is_adult"]
